@@ -57,4 +57,9 @@ public class InstructionManager : MonoBehaviour
     {
 		SoundManager.Instance.PlaySound(SoundEffect.CompletedTone);
     }
+
+	public void InCorrect()
+    {
+		SoundManager.Instance.PlaySound(SoundEffect.IncorrectTone);
+    }
 }

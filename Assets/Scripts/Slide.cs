@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CourseAdjstment : MicroscopePart
+public class Slide : MicroscopePart
 {
     [SerializeField]
     public string[] animationTriggers;

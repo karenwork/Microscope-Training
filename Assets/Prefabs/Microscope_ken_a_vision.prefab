@@ -4733,7 +4733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partAnimator:
   - {fileID: 1377340376787671557}
-  animationTrigger: Play
+  animationTrigger: Down
   isSelected: 0
 --- !u!1 &3365723774251150215
 GameObject:
@@ -6711,7 +6711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partAnimator:
   - {fileID: 1377340376787671557}
-  animationTrigger: Play
+  animationTrigger: Up
   isSelected: 0
 --- !u!1 &5226408310836744665
 GameObject:
@@ -8901,7 +8901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partAnimator:
   - {fileID: 1377340376787671557}
-  animationTrigger: Up
+  animationTrigger: Down
   isSelected: 0
 --- !u!1 &7027930745146653621
 GameObject:
@@ -10701,8 +10701,7 @@ GameObject:
   - component: {fileID: 6826960928299341852}
   - component: {fileID: 4890973391602812678}
   - component: {fileID: 5261287974618029832}
-  - component: {fileID: 5859211921411194718}
-  - component: {fileID: 1097612421270915299}
+  - component: {fileID: 1025737991908705858}
   m_Layer: 0
   m_Name: Left Stage Clamp
   m_TagString: Untagged
@@ -10784,26 +10783,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.478446, y: 3.6566534, z: 0.40233853}
   m_Center: {x: 1.7014488, y: -0.34971356, z: 0.12387093}
---- !u!95 &5859211921411194718
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8368346976453146273}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c5688e65ab94574c83f1a038ea6e7f5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1097612421270915299
+--- !u!114 &1025737991908705858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10812,13 +10792,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 8368346976453146273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 418b43128536ee8409992f7d8b20e45a, type: 3}
+  m_Script: {fileID: 11500000, guid: c31e6ce917ca82640b43115e27899e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   partAnimator:
-  - {fileID: 0}
+  - {fileID: 2624942591287937153}
   animationTrigger: 
   isSelected: 0
+  animationTriggers:
+  - SlideOn
+  - SlideOff
 --- !u!1 &8371565777922652039
 GameObject:
   m_ObjectHideFlags: 0
@@ -11331,7 +11314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partAnimator:
   - {fileID: 1377340376787671557}
-  animationTrigger: Down
+  animationTrigger: Up
   isSelected: 0
 --- !u!1 &8916420859875275777
 GameObject:
@@ -11459,9 +11442,9 @@ MonoBehaviour:
   - {fileID: 9117063564254735323}
   - {fileID: 3001835861251241372}
   - {fileID: 3466517383857886801}
+  - {fileID: 9148827008168315555}
+  - {fileID: 405320332931561438}
   - {fileID: 4753236022811825453}
-  - {fileID: 405320332931561438}
-  - {fileID: 9148827008168315555}
   - {fileID: 9148827008168315555}
   - {fileID: 4777717307509409117}
   - {fileID: 1879402550114819740}
@@ -11479,7 +11462,6 @@ MonoBehaviour:
   - {fileID: 9148827008168315555}
   - {fileID: 405320332931561438}
   - {fileID: 1879402550114819740}
-  taptoPlace: {fileID: 0}
 --- !u!1 &9045378599848457283
 GameObject:
   m_ObjectHideFlags: 0
@@ -11626,7 +11608,7 @@ Transform:
   m_GameObject: {fileID: 9046531975439827721}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.000037013244, y: 2.839984, z: -0.4459277}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1056747156290185994}
   - {fileID: 2695517359778230}
