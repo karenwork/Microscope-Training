@@ -194,7 +194,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -321,7 +321,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c228efdf47bde394d817e89261b02a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  microscopePrefab: {fileID: 9046531975439827721, guid: c80fd58a6b9bdfe478022bdfb2ebf428,
+  microscopePrefab: {fileID: 1045749298911392577, guid: 64c3faf269975a843a72bffe7d148219,
     type: 3}
   lastSelectedPart: {fileID: 0}
   arcamera: {fileID: 1527016187}
@@ -539,7 +539,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -724,7 +724,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

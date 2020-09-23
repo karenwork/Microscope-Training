@@ -47,7 +47,10 @@ public class InstructionManager : MonoBehaviour
 			}
 			instructionSteps[++currentStep].Show();
 		}
-		
+		else
+        {
+			InCorrect();
+        }
     }
 	public void Correct()
     {
