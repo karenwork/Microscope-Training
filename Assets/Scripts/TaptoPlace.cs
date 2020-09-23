@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
+
 public class TaptoPlace : MonoBehaviour
 {
     public GameObject microscopePrefab;
@@ -14,7 +15,8 @@ public class TaptoPlace : MonoBehaviour
     private GameObject spawnObject;
     public Camera arcamera;
     public float waitseconds = 1f;
-
+    public DeBugCanvas deBugCanvas;
+ 
     void Start()
     {
         aRRaycastManager = GetComponent<ARRaycastManager>();
@@ -53,6 +55,7 @@ public class TaptoPlace : MonoBehaviour
             {
                 lastSelectedPart.Selected = true;
                 lastSelectedPart.Show();
+                deBugCanvas.selectedPartText.text = lastSelectedPart.gameObject.name;
             }
         }
     }

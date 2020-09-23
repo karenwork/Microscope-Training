@@ -8,7 +8,7 @@ public class InstructionManager : MonoBehaviour
 	private int currentStep = 0;
 	private MicroscopePart currentObject;
 	private TaptoPlace taptoPlace;
-
+	private DeBugCanvas deBugCanvas;
 	// Singleton instance.
 	public static InstructionManager Instance = null;
 
@@ -32,6 +32,14 @@ public class InstructionManager : MonoBehaviour
     private void OnEnable()
     {
 		taptoPlace = FindObjectOfType<TaptoPlace>();
+		deBugCanvas = FindObjectOfType<DeBugCanvas>();
+    }
+    private void Update()
+    {
+        if (deBugCanvas)
+        {
+			deBugCanvas.nextPartText.text = instructionSteps[currentStep].gameObject.name;
+        }
     }
     public void NextStep()
     {
