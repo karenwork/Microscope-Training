@@ -32,6 +32,7 @@ public class TaptoPlace : MonoBehaviour
         touchPosition = default;
         return false;
     }
+
     void Update()
     {
        if (!TryGetTouchPosition(out Vector2 touchposition))
@@ -51,14 +52,16 @@ public class TaptoPlace : MonoBehaviour
         if (Physics.Raycast (ray,out hitObject))
         {
             lastSelectedPart = hitObject.transform.GetComponent<MicroscopePart>();
-            if (lastSelectedPart != null)
+
+            deBugCanvas.selectedPartText.text = lastSelectedPart.gameObject.name;
+
+            if (InstructionManager.Instance.isActiveAndEnabled)
             {
-                lastSelectedPart.Selected = true;
-                lastSelectedPart.Show();
-                deBugCanvas.selectedPartText.text = lastSelectedPart.gameObject.name;
+                InstructionManager.Instance.NextStep();
             }
         }
     }
+
     private IEnumerator TimedNextStep()
     {
         yield return new WaitForSeconds(waitseconds);

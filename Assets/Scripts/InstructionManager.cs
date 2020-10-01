@@ -45,21 +45,24 @@ public class InstructionManager : MonoBehaviour
     {
 		if (taptoPlace.lastSelectedPart == instructionSteps[currentStep])
         {
-			instructionSteps[currentStep].Hide();
+			instructionSteps[currentStep].Show();
+
 			Correct();
+
 			if (currentStep == instructionSteps.Count)
 			{
 				//Completed Microscope Training
 				Completed();
 				return;
 			}
-			instructionSteps[++currentStep].Show();
+			++currentStep;
 		}
 		else
         {
 			InCorrect();
         }
     }
+
 	public void Correct()
     {
 		SoundManager.Instance.PlaySound(SoundEffect.CorrectTone);
